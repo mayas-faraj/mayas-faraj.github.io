@@ -200,9 +200,6 @@ export const en = {
     builtWith: 'Built with Next.js · Deployed on GitHub Pages',
     backToTop: 'Back to top ↑',
   },
-} as const;
-
-export type Translations = Omit<typeof en, 'lang' | 'dir'> & {
-  lang: 'en' | 'ar';
-  dir: 'ltr' | 'rtl';
 };
+
+export type Translations = typeof en;
