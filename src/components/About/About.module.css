@@ -1,0 +1,105 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ─── Bio ───────────────────────────────────────────────────── */
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bioPara {
+  font-size: 1.025rem;
+  color: var(--text-2);
+  line-height: 1.8;
+}
+
+/* ─── Info card ─────────────────────────────────────────────── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-block: 14px;
+  border-block-end: 1px solid var(--border);
+}
+
+.infoRow:last-child {
+  border-block-end: none;
+  padding-block-end: 0;
+}
+
+.infoLabel {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.infoValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.infoValue a {
+  color: var(--text);
+  transition: color var(--t);
+}
+
+.infoValue a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* ─── Copy button ───────────────────────────────────────────── */
+.copyBtn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--t), background var(--t);
+}
+
+.copyBtn:hover {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.copied {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #4caf7d;
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

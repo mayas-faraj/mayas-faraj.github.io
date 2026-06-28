@@ -1,0 +1,12 @@
+{
+  "name": "Mayas Faraj | Senior Software Engineer",
+  "short_name": "Mayas Faraj",
+  "description": "Portfolio of Mayas Faraj — Senior Software Engineer and Cyber Security Officer specializing in microservices, GraphQL, NestJS, and cybersecurity.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0f1e",
+  "theme_color": "#4b7cf7",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": []
+}

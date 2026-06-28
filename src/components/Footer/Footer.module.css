@@ -1,0 +1,52 @@
+.footer {
+  background: var(--surface);
+  border-block-start: 1px solid var(--border);
+  padding-block: 40px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.brandAccent {
+  color: var(--accent);
+}
+
+.built {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.rights {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.backTop {
+  margin-block-start: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: color var(--t), background var(--t);
+}
+
+.backTop:hover {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
