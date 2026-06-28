@@ -1,6 +1,6 @@
 export const en = {
-  lang: 'en' as const,
-  dir: 'ltr' as const,
+  lang: 'en' as 'en' | 'ar',
+  dir: 'ltr' as 'ltr' | 'rtl',
   switchLang: 'العربية',
 
   nav: {
