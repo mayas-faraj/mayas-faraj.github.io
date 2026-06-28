@@ -202,4 +202,7 @@ export const en = {
   },
 } as const;
 
-export type Translations = typeof en;
+export type Translations = Omit<typeof en, 'lang' | 'dir'> & {
+  lang: 'en' | 'ar';
+  dir: 'ltr' | 'rtl';
+};
